@@ -3,12 +3,17 @@ public class Person
     // attributes
     private String firstName;
     private String surname;
+    private String eyeColour;
+    private String hairColour;
+
 
     // constructor
-    public Person (String fName, String sName)
+    public Person (String fName, String sName, String eColour, String hColour)
     {
         this.firstName = fName;
         this.surname = sName;
+        this.eyeColour = eColour;
+        this.hairColour = hColour;
     }
 
     // methods
@@ -28,7 +33,17 @@ public class Person
         return this.firstName + " " + this.surname;
     }
 
-        // setters
+    public String getEyeColour()
+    {
+        return this.eyeColour;
+    }
+
+    public String getHairColour()
+    {
+        return this.hairColour;
+    }
+
+    // setters
     public void setFirstName(String firstName)
     {
         this.firstName = firstName;
